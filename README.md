@@ -1,4 +1,4 @@
-elixir.vim
+elvish.vim
 ---
 
 A vim plugin for [Elvish unix shell](https://github.com/elves/elvish).
