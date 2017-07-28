@@ -45,3 +45,9 @@ Version 0.1
 
     - Basic support for Elven syntax
     - Wrote README
+
+### License
+
+MIT
+
+Thanks to @huiyiqun for the initial version which I based this on https://github.com/huiyiqun/elvish.vim
