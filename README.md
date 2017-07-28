@@ -32,12 +32,13 @@ Pathogen:
 
 ### TODO
 
-- Highlight variables ($var, @var)
-- Highlight map keys
-- Full support for builtin API commands https://elvish.io/ref/builtin.html
-- Fix bug where math division slashes is also highlighting slashes in paths
-- Highlight commands being called in parens
-- Different colour for variable prefixes for example `re:find` matching "re"
+- [x] Basic syntax highlighting for base language and builtins
+- [ ] Highlight variables ($var, @var)
+- [ ] Highlight map keys
+- [ ] Full support for builtin API commands https://elvish.io/ref/builtin.html
+- [ ] Fix bug where math division slashes is also highlighting slashes in paths
+- [ ] Highlight commands being called in parens
+- [ ] Different colour for variable prefixes for example re:find matching "re"
 
 ### Change Log
 
