@@ -1,8 +1,8 @@
 " Vim syntax file
-" Language:		elvish (elv)
-" Maintainer:	Daniel McGrady <daniel.p.mcgrady@gmail.com>
-" Last Change:	July 27, 2017
-" Version:		0.1
+" Language:     elvish (elv)
+" Maintainer:   Daniel McGrady <daniel.p.mcgrady@gmail.com>
+" Last Change:  July 27, 2017
+" Version:      0.1
 " URL:          https://github.com/dmix/elvish.vim
 " License:      MIT
 
@@ -27,14 +27,18 @@ syn keyword elvishRepeat        for in
 syn keyword elvishException     try except finally tried
 syn keyword elvishKeywords      begin end
 syn keyword elvishUse           use
-syn keyword elvishSpecial       print echo put break fail return
-syn keyword elvishBuiltins      constantly bool range each base wcswidth eq ord is count repeat joins keys splits
-syntax match elvishBuiltins     "path-base"
-syntax match elvishBuiltins     "tilde-abbr"
-syntax match elvishBuiltins     "has-key"
-syntax match elvishBuiltins     "has-value"
-syntax match elvishBuiltins     "has-suffix"
-syntax match elvishBuiltins     "has-prefix"
+
+" Builtin functions
+syn keyword elvishBuiltins      print echo put break fail return each bool range 
+syn keyword elvishBuiltins      count repeat joins keys splits  wcswidth constantly
+syn keyword elvishBuiltins      base eq ord is 
+syn match elvishBuiltins        "path-base"
+syn match elvishBuiltins        "tilde-abbr"
+syn match elvishBuiltins        "has-key"
+syn match elvishBuiltins        "has-value"
+syn match elvishBuiltins        "has-suffix"
+syn match elvishBuiltins        "has-prefix"
+
 
 " Numbers
 syn match   elvishNumber          "\<\(0[0-7]*\|0[xX]\x\+\|\d\+\)[lL]\=\>"
@@ -43,20 +47,20 @@ syn match   elvishNumber          "\<\d\+[eE][-+]\=\d\+[fFdD]\=\>"
 syn match   elvishNumber          "\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
 
 " Operators
-syntax match elvishOperator "\v\*"
-syntax match elvishOperator "\v/"
-syntax match elvishOperator "\v\+"
-syntax match elvishOperator "\v-"
-syntax match elvishOperator "\v\?"
-syntax match elvishOperator "\v\*\="
-syntax match elvishOperator "\v/\="
-syntax match elvishOperator "\v\+\="
-syntax match elvishOperator "\v-\="
-syntax match elvishOperator "\v\=\="
-syntax match elvishOperator "\v\^"
-syntax match elvishOperator "\v\%"
-syntax match elvishOperator "\v\>"
-syntax match elvishOperator "\v\<"
+syn match elvishOperator "\v\*"
+syn match elvishOperator "\v/"
+syn match elvishOperator "\v\+"
+syn match elvishOperator "\v-"
+syn match elvishOperator "\v\?"
+syn match elvishOperator "\v\*\="
+syn match elvishOperator "\v/\="
+syn match elvishOperator "\v\+\="
+syn match elvishOperator "\v-\="
+syn match elvishOperator "\v\=\="
+syn match elvishOperator "\v\^"
+syn match elvishOperator "\v\%"
+syn match elvishOperator "\v\>"
+syn match elvishOperator "\v\<"
 
 " Comments
 syn match   elvishLineComment   "\v#.*$"
@@ -78,17 +82,16 @@ syn region  elvishPOSIXString   matchgroup=elvishStringDelimiter start=+\$'+ end
 " -----------------------------------------------------------------------------
  
 hi link elvishKeywords          Keyword
-hi link elvishSpecial           Keyword
 hi link elvishLineComment       Comment
 hi link elvishUse               Include
 hi link elvishRepeat            Repeat
 hi link elvishException         Exception
 hi link elvishConditional       Conditional
 hi link elvishFunction          Function
-hi link elvishString	        String
+hi link elvishString            String
 hi link elvishStringDelimiter   elvishString
-hi link elvishPOSIXString	    elvishString
+hi link elvishPOSIXString       elvishString
 hi link elvishDeref             PreProc
 hi link elvishOperator          Operator
-hi link elvishBuiltins          Operator
-hi link elvishNumber			Number
+hi link elvishBuiltins          Keyword
+hi link elvishNumber            Number
