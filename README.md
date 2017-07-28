@@ -33,6 +33,7 @@ Pathogen:
 ### TODO
 
 - [x] Basic syntax highlighting for base language and builtins
+- [x] Create a test.elv file to test various syntax structures
 - [ ] Highlight variables ($var, @var)
 - [ ] Highlight map keys
 - [ ] Full support for builtin API commands https://elvish.io/ref/builtin.html
@@ -45,6 +46,7 @@ Pathogen:
 Version 0.1
 
     - Basic support for Elven syntax
+    - Created a test.elv file for testing various language examples
     - Wrote README
 
 ### License
