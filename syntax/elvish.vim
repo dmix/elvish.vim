@@ -20,7 +20,7 @@ let b:current_syntax = 'elvish'
 " -----------------------------------------------------------------------------
 
 " Keywords
-syn keyword elvishKeywords      fn
+syn keyword elvishKeywords      fn var set
 syn keyword elvishConditional   if then elif else fi
 syn keyword elvishRepeat        while do done for
 syn keyword elvishException     try except finally
@@ -46,6 +46,8 @@ syn match elvishBuiltins        "styled-segment"
 syn match elvishBuiltins        "tilde-abbr"
 syn match elvishBuiltins        "to-json"
 syn match elvishBuiltins        "from-json"
+syn match elvishBuiltins        "to-terminated"
+syn match elvishBuiltins        "from-terminated"
 syn match elvishBuiltins        "not-eq"
 
 
