@@ -20,7 +20,7 @@ let b:current_syntax = 'elvish'
 " -----------------------------------------------------------------------------
 
 " Keywords
-syn keyword elvishKeywords      fn
+syn keyword elvishKeywords      fn var
 syn keyword elvishConditional   if then elif else fi
 syn keyword elvishRepeat        while do done for
 syn keyword elvishException     try except finally
